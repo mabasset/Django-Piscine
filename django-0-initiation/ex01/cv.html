@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Your resume in HTML</title>
+		<style>
+			h1, h2, h3 {
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			table, th, td {
+				border: 2px solid red;
+				border-collapse: collapse;
+			}
+			thead th {
+				font-size: 1em;
+				padding: 0.5em 1em;
+				text-transform: uppercase;
+			}
+			td {
+				text-align: center;
+				padding: 0.4em;
+			}
+			tbody tr:last-child td:last-child {
+				border-color: #424242;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>
+				my resume in HTML
+			</h1>
+		</header>
+		<main>
+			<ul style="list-style: none; padding-left: 0;">
+				<li>
+					<span>
+						<strong style="text-transform: uppercase;">name: </strong>
+						<span style="text-transform: capitalize;">matteo</span>
+					</span>
+				</li>
+				<li>
+					<span>
+						<strong style="text-transform: uppercase;">surname: </strong>
+						<span style="text-transform: capitalize;">bassetto</span>
+					</span>
+				</li>
+			</ul>
+			<table>
+				<thead>
+					<tr>
+						<th scope="col" colspan="2">
+							skills
+						</th>
+					</tr>
+					<tr>
+						<th scope="col">
+							languages
+						</th>
+						<th scope="col">
+							technologies
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td scope="row">
+							sh scripting
+						</td>
+						<td>
+							nginx
+						</td>
+					</tr>
+					<tr>
+						<td scope="row">
+							c
+						</td>
+						<td>
+							vagrant
+						</td>
+					</tr>
+					<tr>
+						<td scope="row">
+							cpp
+						</td>
+						<td>
+							docker
+						</td>
+					</tr>
+					<tr>
+						<td scope="row">
+							java/type script
+						</td>
+						<td>
+							django
+						</td>
+					</tr>
+					<tr>
+						<td scope="row">
+							python
+						</td>
+						<td>
+							html css
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 style="margin-bottom: 0;">career path</h2>
+			<ol style="list-style: none; display: flex; gap: 1em; padding: 0; font-size: 1em;">
+				<li style="text-transform: capitalize;">
+					scientific high school
+				</li>
+				<li>
+					>
+				</li>
+				<li style="text-transform: capitalize;">
+					42 roma luiss
+				</li>
+				<li>
+					>
+				</li>
+				<li style="text-transform: capitalize;">
+					unemployed
+				</li>
+			</ol>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
