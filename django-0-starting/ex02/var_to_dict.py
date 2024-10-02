@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def my_var_to_dict():
 	d = [
 		('Hendrix', '1942'),

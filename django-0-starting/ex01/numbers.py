@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def my_numbers(filename):
 	with open(filename, 'r') as f:
 		for nbr in f.read().split(','):

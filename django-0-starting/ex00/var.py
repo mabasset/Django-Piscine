@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def my_var():
 	var = 42
 	print(var, "has a type", type(var))

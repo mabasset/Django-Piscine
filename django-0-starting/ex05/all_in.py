@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 
 def my_all_in(argv):

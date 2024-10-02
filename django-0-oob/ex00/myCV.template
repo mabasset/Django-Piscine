@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CV</title>
+	</head>
+	<body>
+		<header>
+			<h1>My CV</h1>
+		</header>
+		<main>
+			<ul style="list-style: none; padding-left: 0;">
+				<li>
+					<span>
+						<strong style="text-transform: uppercase;">name: </strong>
+						<span style="text-transform: capitalize;">{name}</span>
+					</span>
+				</li>
+				<li>
+					<span>
+						<strong style="text-transform: uppercase;">surname: </strong>
+						<span style="text-transform: capitalize;">{surname}</span>
+					</span>
+				</li>
+				<li>
+					<span>
+						<strong style="text-transform: uppercase;">age: </strong>
+						<span style="text-transform: capitalize;">{age}</span>
+					</span>
+				</li>
+				<li>
+					<span>
+						<strong style="text-transform: uppercase;">profession: </strong>
+						<span style="text-transform: capitalize;">{profession}</span>
+					</span>
+				</li>
+			</ul>
+		<main>
+	</body>
+</html>
