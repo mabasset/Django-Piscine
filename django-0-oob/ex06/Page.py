@@ -84,11 +84,46 @@ def my_page():
 		Body([
 			H1(Text("Matteo's CV"), {"style": "text-transform: capitalize;"}),
 			Ul([
-				Li(),
-				Li(),
+				Li(Text("NAME: Matteo")),
+				Li(Text("SURNAME: Bassetto")),
+				Li(Text("AGE: 23")),
+				Li(Text("PROFESSION: Programmer"))
 			], {"style": "list-style: none; padding-left: 0;"}),
+			Table([
+				Tr(Th(Text("SKILLS"), {"colspan": "2"})),
+				Tr([
+					Th(Text("LANGUAGES"), {"style": "border: 2px solid black; border-collapse: collapse;"}),
+					Th(Text("TECHNOLOGIES"), {"style": "border: 2px solid black; border-collapse: collapse;"})
+				]),
+				Tr([
+					Td(Text("sh scripting"), {"style": "border: 2px solid black; border-collapse: collapse;"}),
+					Td(Text("nginx"), {"style": "border: 2px solid black; border-collapse: collapse;"})
+				]),
+				Tr([
+					Td(Text("c"), {"style": "border: 2px solid black; border-collapse: collapse;"}),
+					Td(Text("vagrant"), {"style": "border: 2px solid black; border-collapse: collapse;"})
+				]),
+				Tr([
+					Td(Text("cpp"), {"style": "border: 2px solid black; border-collapse: collapse;"}),
+					Td(Text("docker"), {"style": "border: 2px solid black; border-collapse: collapse;"})
+				]),
+				Tr([
+					Td(Text("java/type script"), {"style": "border: 2px solid black; border-collapse: collapse;"}),
+					Td(Text("django"), {"style": "border: 2px solid black; border-collapse: collapse;"})
+				]),
+				Tr([
+					Td(Text("python"), {"style": "border: 2px solid black; border-collapse: collapse;"}),
+					Td(Text("html css"), {"style": "border: 2px solid black; border-collapse: collapse;"})
+				])
+			], {"style": "border: 2px solid black; border-collapse: collapse;"})
 		])
 	])
+	try:
+		page = Page(cv)
+		print(page)
+		page.write_to_file("cv.html")
+	except Exception as e:
+		print(e)
 
 if __name__ == "__main__":
 	my_page()

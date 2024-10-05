@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CV</title>
+		<title style="text-transform: capitalize;">{name}'s CV</title>
 	</head>
 	<body>
 		<header>
-			<h1>My CV</h1>
+			<h1 style="text-transform: capitalize;">{name}'s CV</h1>
 		</header>
 		<main>
 			<ul style="list-style: none; padding-left: 0;">
@@ -36,6 +36,6 @@
 					</span>
 				</li>
 			</ul>
-		<main>
+		</main>
 	</body>
 </html>
